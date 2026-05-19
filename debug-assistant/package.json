@@ -1,0 +1,20 @@
+{
+  "name": "venderly-debug-assistant",
+  "version": "1.0.0",
+  "description": "AWS Lambda that analyzes Venderly automation errors with Bedrock and emails debugging guidance.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check index.mjs && node --check src/parser.mjs && node --check src/knowledge.mjs && node --check src/bedrock.mjs && node --check src/prompt-builder.mjs && node --check src/email-sender.mjs && node --check src/failure-handler.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/client-ses": "^3.0.0",
+    "@aws-sdk/client-sns": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
