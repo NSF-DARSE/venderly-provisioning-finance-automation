@@ -209,3 +209,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Node / monorepo additions ---
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+.pnpm-debug.log
+*.tgz
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# AWS Lambda build artifacts
+function.zip
+lambda.zip
+*.zip
+# Local dev artifacts
+.DS_Store
+.vscode/
+.idea/
+.claude/

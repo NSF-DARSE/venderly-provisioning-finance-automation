@@ -1,0 +1,27 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-2:980228515132:venderly-nva-alerts:example",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "11111111-2222-3333-4444-555555555555",
+        "TopicArn": "arn:aws:sns:us-east-2:980228515132:venderly-nva-alerts",
+        "Subject": "Venderly automation failed",
+        "Message": "{\"errorMessage\":\"Snapshot application failed for Venderly customer\",\"customerName\":\"Example Dental\",\"contactId\":\"abc123\",\"locationId\":\"loc_456\",\"workflow\":\"apply-snapshot\",\"timestamp\":\"2026-05-01T10:23:45.123Z\"}",
+        "Timestamp": "2026-05-01T10:23:45.123Z",
+        "SignatureVersion": "1",
+        "Signature": "example",
+        "SigningCertUrl": "https://sns.us-east-2.amazonaws.com/example.pem",
+        "UnsubscribeUrl": "https://sns.us-east-2.amazonaws.com/?Action=Unsubscribe",
+        "MessageAttributes": {
+          "severity": {
+            "Type": "String",
+            "Value": "error"
+          }
+        }
+      }
+    }
+  ]
+}
